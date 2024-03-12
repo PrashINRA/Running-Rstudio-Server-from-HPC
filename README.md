@@ -1,5 +1,7 @@
 **Download the prstudio.sh and run the bellow on terminal**
+
 chmod +x ./prstudio.sh
+
 ./prstudio.sh
 
 **This will create an instruction**
