@@ -9,7 +9,7 @@ ssh -N -L 8787:localhost:8787 psingh@your_compute_node
 
 **Now point your browser to Point your web browser at**
 
-http://localhost:8787
+http://localhost:8787  **use any available port, it could be 8788 or 8789 depending on number of people using it**
 
 **An Rstudio Server is ready to bounce**
 
