@@ -4,7 +4,7 @@
 chmod +x ./prstudio.sh
 ./prstudio.sh
 ```
-**This will create an instruction**
+**This will create an instruction.**
 **Open a new terminal and paste the instructions which would be like this-**
 
 ```console
