@@ -6,7 +6,7 @@ This guide explains how to run RStudio Server directly on your HPC using a conta
 
 ## Step 1: Log in to your HPC
 
-Open a terminal and log in to your account:
+Open a terminal and log in to your HPC account:
 ```bash
 ssh your_username@hpc.address.nl
 ```
@@ -26,11 +26,18 @@ chmod +x prstudio.sh
 ./prstudio.sh
 ```
 
-> **Note:** Let it run for a few minutes as it builds a container for R and RStudio.
+Let it run for a few minutes as it builds a container for R and RStudio.
 
+## Step 5: Open your browser
 
+Navigate to:
+```
+http://localhost:8787
+```
 
+> **Note:** The port may vary (e.g., 8788, 8789) depending on availability.
 
+This will open RStudio in your browser, connected to your HPC server with full compute power.
 
 
 
