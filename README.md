@@ -1,21 +1,67 @@
-**Download the prstudio.sh and run the bellow on terminal**
+# Run RStudio Server on Your HPC (Simple Guide)
 
-```console
-chmod +x ./prstudio.sh
+This guide explains how to run RStudio Server directly on your HPC using a container.  
+No bioinformatics or DevOps background required.
+
+---
+
+## **Step 1: Log in to your HPC**
+
+Open a terminal on your HPC and login to your account
+
+```bash
+ssh your_username@hpc.address.nl
+
+## **Step 2: Download the RStudio startup script**
+
+wget https://raw.githubusercontent.com/PrashINRA/Running-Rstudio-Server-from-HPC/main/prstudio.sh
+
+
+## **Step 3: Make it executable**
+
+chmod +x prstudio.sh
+
+## **Step 4: Run the shell script**
+
 ./prstudio.sh
-```
-**This will create an instruction.**
-**Open a new terminal and paste the instructions which would be like this-**
 
-```console
-ssh -N -L 8787:localhost:8787 your_usr_name@your_hpc_login
-```
-**Enter your password and then point your web browser at**
+#Let it run for few min as it is building a container for R and Rstudio
+#Follow the instructions printed on the screen.
+#The script will tell you to open a new terminal on your hpc and run a command similar to:
 
-http://localhost:8787  
+ssh -N -L 8787:localhost:8787 your_username@node123
 
-**use any available port, it could be 8788 or 8789 depending on the number of people using it**
+## **Step 5: Open the browser and**
+
+http://localhost:8787
+
+#he port may also be 8788, 8789, etc., depending on availability.
+
+You should now see RStudio Server running on your HPC node with full compute power.
+
+Done!
+
+You can now use RStudio in your browser, backed by your HPC’s high-performance compute resources.
 
 **An Rstudio Server is ready to bounce**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
