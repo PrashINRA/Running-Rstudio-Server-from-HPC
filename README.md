@@ -26,7 +26,7 @@ chmod +x prstudio.sh
 ./prstudio.sh
 ```
 
-Let it run for a few minutes as it builds a container for R and RStudio.
+Let it run for a few minutes as it builds a container for R and RStudio and follow the instruction it gives.
 
 ## Step 5: Open your browser
 
